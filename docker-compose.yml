@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  db-tester:
+    build: .
+    ports:
+      - "8889:8889"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
